@@ -26,4 +26,8 @@ public class HomeController extends Controller {
         return ok(views.html.tutorial.render());
     }
 
+    public Result hello(String name) {
+        return ok(views.html.hello.render(name));
+    }
+
 }
